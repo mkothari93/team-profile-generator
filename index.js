@@ -1,6 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateHTML = require('./src/generateHTML')
+const generateHTML = require('./src/generateHTML');
+
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+
+const team = [];
 
 const managerInfo = [
     {
@@ -58,8 +64,13 @@ const managerInfo = [
 ];
 
 function managerInput() {
-    inquirer.prompt(managerInfo).then(())
+    inquirer.prompt(managerInfo).then((managerData => {
+        const manager = new Manager(managerData.name, managerData.id, managerData.email, managerData.officeNumber);
+        console.log(manager);
+    }))
 };
+
+managerInput();
 
 const employeeInfo = [
     {
@@ -144,5 +155,15 @@ const employeeInfo = [
 ];
 
 function employeeInput() {
-    inquirer.prompt(employeeInfo).then(())
+    inquirer.prompt(employeeInfo).then(employeeData => {
+        if (employeeData.role === "Engineer") {
+            const employee = new Engineer (employeeData.name, employeeData.id, employeeData.email, employeeData.github);
+            console.log(employee);
+        } else if (employeeData.role === "Intern") {
+            const employee = new Intern (employeeData.name, employeeData.id, employeeData.email, employeeData.school);
+            console.log(employee);
+        }
+    })
 };
+
+employeeInput();
