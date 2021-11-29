@@ -1,11 +1,33 @@
-const { expect } = require('@jest/globals');
-const { string, number } = require('yargs');
-const Employee = require('./lib/Employee')
+const Employee = require('../lib/Employee')
 
-test ('creates a employee object', () => {
-    const employee = new Employee('Monika', '12345', 'mkothari.1993@gmail.com');
+test("creates an employee object", () => {
+    const employee = new Employee('Monika', 30, 'monika.kothari@gmail.com');
+    //expect(typeof(employeeObject)).toBe("object");
+    expect(employee.name).toEqual(expect.any(String));
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.email).toEqual(expect.any(String));
+})
 
-    expect(employee.name).toEqual(expect.any(string));
-    expect(employee.id).toEqual(expect.any(number));
-    expect(employee.email).toEqual(expect.any(string));
+test("gets employee name", () => {
+    const employee = new Employee('Monika', 30, 'monika.kothari@gmail.com');
+    
+    expect(employee.getName()).toEqual(expect.any(String));
+})
+
+test("gets employee id", () => {
+    const employee = new Employee('Monika', 30, 'monika.kothari@gmail.com');
+    
+    expect(employee.getId()).toEqual(expect.any(Number));
+})
+
+test("gets employee email", () => {
+    const employee = new Employee('Monika', 30, 'monika.kothari@gmail.com');
+    
+    expect(employee.getEmail()).toEqual(expect.any(String));
+})
+
+test("gets employee role", () => {
+    const employee = new Employee('Monika', 30, 'monika.kothari@gmail.com');
+    
+    expect(employee.getRole()).toEqual("Employee");
 })
