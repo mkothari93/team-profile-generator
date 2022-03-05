@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mohave", sans-serif;
+}
+
+header {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(20, 56, 85);
+  color: aliceblue;
+}
+
+#container {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h2 {
+  color: aliceblue;
+  background-color: steelblue;
+}
