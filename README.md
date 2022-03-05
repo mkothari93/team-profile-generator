@@ -7,7 +7,6 @@ Team generator will generate an html page that displays each member of the team 
 <br>
 
 ## Built With
----
 * HTML
 * CSS / Bootstrap
 * JavaScript
@@ -16,7 +15,6 @@ Team generator will generate an html page that displays each member of the team 
 <br>
 
 ## Table of Contents
----
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -26,31 +24,27 @@ Team generator will generate an html page that displays each member of the team 
 <br>
 
 ## Installation
----
 To install this application, clone this repository. Run '$npm i' command in the terminal to download all dependencies. To start the server, run 'npm start' in the terminal.
 
 <br>
 
 ## Usage
----
 Image of HTML file created:
+![team-generator](https://user-images.githubusercontent.com/90233589/156880973-c9611a86-dd3b-4d4d-8007-ac619dd3f413.PNG)
 
 
 Link to walkthrough video:
+https://drive.google.com/file/d/1JallSMNEwP1xeXCaCGAdA3ovmD_0FBZU/view
 
 
 <br>
 
 ## Credits
----
-
 Made by Monika Kothari
 
 <br>
 
 ## License
----
-
 The application is covered under the following license:
 
 [MIT](https://opensource.org/licenses/MIT)
@@ -58,8 +52,6 @@ The application is covered under the following license:
 <br>
 
 ## Questions
----
-
 If you have any additonal questions, contact me via:
 
 GitHub: [Monika Kothari GitHub](https://github.com/mkothari93)
